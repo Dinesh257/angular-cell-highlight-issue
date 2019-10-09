@@ -4,16 +4,16 @@
   "private": true,
   "dependencies": {
     "rxjs": "6.1.0",
-    "wijmo": "5.20182.500",
+    "wijmo": "5.20192.624",
     "core-js": "2.5.5",
     "zone.js": "0.8.26",
-    "@angular/core": "6.0.0",
-    "@angular/forms": "6.0.0",
-    "@angular/common": "6.0.0",
-    "@angular/router": "6.0.0",
-    "@angular/compiler": "6.0.0",
-    "@angular/platform-browser": "6.0.0",
-    "@angular/platform-browser-dynamic": "6.0.0"
+    "@angular/core": "7.2.15",
+    "@angular/forms": "7.2.15",
+    "@angular/common": "7.2.15",
+    "@angular/router": "7.2.15",
+    "@angular/compiler": "7.2.15",
+    "@angular/platform-browser": "7.2.15",
+    "@angular/platform-browser-dynamic": "7.2.15"
   },
   "scripts": {
     "ng": "ng",

@@ -1,5 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { DataSvcService } from "./data-svc.service";
+import { CollectionView } from 'wijmo/wijmo';
 
 import * as wjcCore from 'wijmo/wijmo';
 import * as wjcGrid from 'wijmo/wijmo.grid';
@@ -10,8 +11,9 @@ import * as wjcGrid from 'wijmo/wijmo.grid';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  data;
+  data : CollectionView;
   filter;
+    @ViewChild('grid') jsonFlex: wjcGrid.FlexGrid;
 
   constructor(private dataSvc: DataSvcService) {
     this.data = this.dataSvc.getTreeData();
@@ -27,6 +29,13 @@ export class AppComponent {
     // applied dataMap refresh filtershow values
     this.updateFilterShowValues(this.filter);
   }
+
+   reload(){
+      this.data = new CollectionView([]);
+      this.data = new CollectionView(this.dataSvc.getTreeData());
+      this.jsonFlex.refresh();
+
+    }
 
   initFilter(filter) {
     // save filter instance for later use
