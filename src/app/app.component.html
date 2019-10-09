@@ -3,7 +3,8 @@
 </div>
 <h2>FlexGridFilter on hierarchical data</h2>
 <wj-flex-grid #grid 
-  [itemsSource]="data" 
+  [itemsSource]="data"
+   [headersVisibility]="1" 
   (initialized)="init(grid)" 
   [childItemsPath]="'cities'"
   [isReadOnly]="false">

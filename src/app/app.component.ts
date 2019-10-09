@@ -16,7 +16,7 @@ export class AppComponent {
     @ViewChild('grid') jsonFlex: wjcGrid.FlexGrid;
 
   constructor(private dataSvc: DataSvcService) {
-    this.data = this.dataSvc.getTreeData();
+    this.data = new CollectionView(this.dataSvc.getTreeData());
   }
 
   init(grid) {
