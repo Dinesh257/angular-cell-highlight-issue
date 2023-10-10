@@ -7,7 +7,7 @@
     "wijmo": "5.20192.624",
     "core-js": "2.5.5",
     "zone.js": "0.8.26",
-    "@angular/core": "7.2.15",
+    "@angular/core": "10.2.5",
     "@angular/forms": "7.2.15",
     "@angular/common": "7.2.15",
     "@angular/router": "7.2.15",
